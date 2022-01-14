@@ -1,0 +1,91 @@
+/*swipe tinder*/
+#tinderslide {position: relative; z-index:3;width:100%;height: 100%;	margin:0 auto;}
+#tinderslide ul {margin: 0;position: relative;display: block;min-height:410px;	padding:0;}
+#tinderslide li {
+display: block;
+width: 100%;
+min-height:400px;
+overflow: hidden;
+position: absolute;
+top: 0;
+z-index: 2;
+left: 0;
+box-shadow: 0 0 11px rgba(0, 0, 0, .1);
+text-align: center;
+padding:15px;
+background: #000;
+font-size:16px;
+line-height:20px;
+color: #fff;
+border-radius:4px;
+-webkit-transform: translate3d(0%,0,0) scale3d(1,1,1);
+-moz-transform: translate3d(0%,0,0) scale3d(1,1,1);
+-ms-transform: translate3d(0%,0,0) scale3d(1,1,1);
+-o-transform: translate3d(0%,0,0) scale3d(1,1,1);
+transform: translate3d(0%,0,0) scale3d(1,1,1);
+backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+}
+#tinderslide li .cover{width:100%; height:auto; overflow:hidden; margin:0; border-radius:4px; position:relative;}
+#tinderslide li .cover img{width:100%;}
+#tinderslide li .box-area{min-height:400px; flex-direction:column;}
+#tinderslide li .cover .text{font-size:12px; line-height:16px;position:absolute; bottom:0; left:0; right:0; padding:10px; background:rgba(0,0,0,0.8); color:#fff;}
+#tinderslide li .quiz-icon{width:100px; height:100px; margin:0 0 30px 0; background:transparent; color:#fff; border:8px solid #fff; border-radius:50%;}
+/* Image text */
+#tinderslide li h2 {
+color: #fff;
+font-size: 30px;
+text-align: center;
+}
+/* Image rotation */
+#tinderslide li.pane1 {
+-webkit-transform: rotate(-1deg);
+-moz-transform: rotate(-1deg);
+-o-transform: rotate(-1deg);
+-ms-transform: rotate(-1deg);
+transform: rotate(-1deg);
+}
+
+#tinderslide li.pane2 {
+-webkit-transform: rotate(2deg);
+-moz-transform: rotate(2deg);
+-o-transform: rotate(2deg);
+-ms-transform: rotate(2deg);
+transform: rotate(2deg);
+}
+#tinderslide .like,#tinderslide .dislike, #tinderslide .skip {opacity: 0;position: absolute;width:40px;	height:40px;left:20px;top:20px;z-index: 1;overflow: hidden;-webkit-transform: translate3d(0%,0,0) scale3d(1,1,1);-moz-transform: translate3d(0%,0,0) scale3d(1,1,1);-ms-transform: translate3d(0%,0,0) scale3d(1,1,1);-o-transform: translate3d(0%,0,0) scale3d(1,1,1);transform: translate3d(0%,0,0) scale3d(1,1,1);-webkit-backface-visibility: hidden;backface-visibility: hidden;font-size:30px; font-family:'FontAwesome';}
+#tinderslide .dislike{right:20px;left: auto; display:none;}
+#tinderslide .like:before{content: "\f164"; color:#2dd077  ; display:none;}
+#tinderslide .dislike:before {content: "\f165";color:#ef4b4b ; display:none;}
+#tinderslide .skip:before {content: "\f00d";color:#fff ; display:none;}
+.boxframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 70%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+.tinderbox{padding:0 15px; max-width:700px; margin:0 auto; position:relative; z-index:2; display:flex; justify-content:center; align-items:center; flex-direction:column;}
+.tinderbox .boxbtn{width:100%; display:flex; justify-content:center; align-items:center;}
+.tinderbox .boxbtn button{width:80px; height:80px;display:flex; justify-content:center; align-items:center; font-size:30px; flex-direction:column; background:transparent; border:none; cursor:pointer;}
+.tinderbox .boxbtn button span{font-size:12px;}
+@media (max-width: 740px){
+.boxframe{padding-top:90%;}
+#tinderslide li{width:89%; min-height:200px;}
+#tinderslide li .box-area{min-height:200px;}
+#tinderslide ul{min-height:100px;}
+.tinderbox{overflow:hidden; height:100vh;}
+#tinderslide li .cover .text{position:inherit;}
+.tinderbox .boxbtn{margin-bottom:100px;}
+}

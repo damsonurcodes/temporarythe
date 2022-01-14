@@ -1,0 +1,140 @@
+html {font-family: 'Montserrat', sans-serif; /* 1 */-ms-text-size-adjust:none; /* 2 */-webkit-text-size-adjust:none; /* 2 */font-size:18px; -webkit-font-smoothing: antialiased; font-weight:400; color:#000000;margin:0 auto;scroll-behavior: smooth;}
+div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body{margin: 0;overflow-x: hidden;width: 100vw;}
+.container-col img{width: 100%;}
+/* header */
+header {font-family: 'Montserrat', sans-serif;color: #fff;font-weight: 700;width: 75%;text-align: center;z-index:1;} 
+header h1 {margin: 0;font-size: 6vw;} 
+header a {color: white;}
+.pier h1 {color: white;line-height: normal;}
+.pier h2 {color: white;line-height: normal;}  
+.pier h3 {color: white;}
+.bg-blur{width: 100vw;height: 100vh;position: absolute;z-index: 0;background-color: rgb(0, 0, 0, 0.5);margin: 0;left: 0;}
+.tribune-logo-shadow {width:100%;display: block;margin:0 auto;top: 127px;}
+.tribune-logo-shadow img{width:200px; height: auto; margin:0 auto;}
+
+/* content */
+.content {padding: 0 25%;margin: 20pt auto;}
+.content p{margin: 20pt 0;}
+.overflow-hidden {overflow: hidden;}
+.container{margin:0 auto; max-width:1200px; padding:0 15px; display:block; min-height:20px;}
+.container.full{max-width:100%;}
+.container.small{max-width:1000px;}
+.container.smaller{max-width:600px;}
+.container-col{margin-left:-15px; margin-right:-15px;padding: 0 15%;}
+.boxbox{margin:60px auto; overflow:hidden;}
+.step-container p, .boxbox p, .boxbox ul{font-family: 'PT Serif', serif;}
+.boxbox p, .boxbox ul{margin:0 0 30px 0;}
+.boxbox ul li {margin-bottom: 12px;}
+.boxbox p:last-child, .boxbox ul li:last-child{margin:0;}
+.containerfull{width:100%; display:block; overflow:hidden; border-top:1px solid #000;border-bottom:1px solid #000; position:relative;}
+.containerfull .container50left{width:50%; float:left;margin:0 auto;}
+.containerfull .container50right{width:50%;position:absolute; top:0; bottom:0; right:0; padding:0; display:flex; align-items:center; justify-content:center;}
+.containerfull .container50right .inside{padding:60px; display:flex; align-items:center; justify-content:center; flex-direction:column;}
+.containerfull .container50right .inside p{margin:0 0 30px 0;}
+.containerfull .container50right .inside p:last-child{margin:0;}
+.square {position: relative;width:100%;}
+.square:after {content: "";display: block;padding-bottom: 100%;}
+.square-img {position: absolute;width: 100%;height: 100%; overflow: hidden;display:flex; align-items:center; justify-content: center;}
+.square-img a{display:flex; align-items:center; justify-content: center; height:100%; width:100%;}
+.square-img img{width:auto; height:100% !important; margin:0 auto;}
+.square-img.flat{border-radius:0;}
+/* footer */
+footer{background-color: #000000;clear: both;color: #f5f5f5;margin-top: 0;padding: 30px 0;}
+footer .footer-wrapper {margin: 0 auto;padding: 0 30px;}
+footer .footer-wrapper .conde-links {display: none;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
+footer .conde-links .worldwide {-ms-flex-preferred-size: 242px;flex-basis: 242px;margin: 0 auto;}
+footer .conde-links .worldwide h6 {color: #aeabac;font-size: 12px;font-weight: 700;letter-spacing: .8px;line-height: 2.5;text-transform: uppercase;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;}
+footer .conde-links .worldwide ul {list-style: none;margin: 0;padding: 0;}
+footer .conde-links .worldwide ul li {color: #706d6e;font-size: 12px;font-weight: 400;letter-spacing: 1px;line-height: 2.5;text-decoration: none;text-transform: uppercase;}
+footer .component-corp-legal {margin-top: 30px;color: #999;font-family: VFSans,Helvetica;font-weight: 400;font-size: 13px;line-height: 18px;}
+.component-corp-legal>div {display: -webkit-box;display: -ms-flexbox;display: flex;position: relative;}
+footer .component-corp-legal>div .conde-logo {height: 29px;margin: 0 auto 30px}
+.component-corp-legal .conde-logo {color: #FFFFFF;display: block;height: 22px;margin: 0 auto 25px;text-align: center;width: 200px;}
+
+.social-media {margin:0; padding: 0;position: absolute;right: 0;}
+.social-media li{display: inline-block;margin-left: 5px;}
+.social-media a{font-size: 1.5em;color: #FFFFFF;width: 32px;height: 32px;border-radius: 16px;display: flex;border: 1px solid #fff;justify-content: center;align-items: center;}
+
+/* counter covid */
+.row{position:relative}.counter{padding-bottom: 20px;}.counter h4{text-align: center;}.counter p{color:#b9b9b9;position:absolute;left:5px;bottom:0px}.cards{display:flex;}.card{min-width:200px;border-radius:3px;text-align:center;color:#fff;margin:5px;padding:2px 10px}.card.aktif{background-color:#f60}.card.positif{background-color:#c00}.card.sembuh{background-color:#3c0}.card.meninggal{background-color:#000}.card .title{font-size:1rem;font-weight:700;margin:5px auto}.card h3{font-size:3rem;margin:0}.card p{font-weight:700;color:#fff;position:unset;margin: 0 0 10px;font-size: 16px;}.card p i{font-style: normal;}.card p font{font-weight:300}@media screen and (max-width:800px){.container.covid{padding: 0;}.cards{position:relative;display:grid;grid-template-columns: repeat(2, 1fr);}.card{min-width: fit-content;}.card .title{font-size:16px}.card h3{font-size:2rem}.counter p{font-size: 12px;margin: 0 0 10px;}}@media screen and (max-width:350px){.card .title{font-size:1.5rem}.card{min-width:unset;width:46.5%}}@media screen and (max-width:300px){.card{min-width:unset;width:98%;margin: 5px 1%;}}
+/* scroll */
+#scrolly {position: relative;background-color: #f3f3f3;}
+figure {position: relative;left: 0;top: 0;height: 100vh;width: 100%;margin: 0;z-index: 1;overflow: hidden;}
+figure#flourishPinning{max-width: 1000px;left: unset;}
+figure#petaJakarta1Pinning, figure#petaJakarta2Pinning, figure#petaJakarta3Pinning, figure#petaJakarta4Pinning{display: flex;flex-direction: column;justify-content: center;}
+.scontainer{width: 100%;position: relative;z-index: 2;}
+.step {position: relative;max-width:800px;margin: 0 auto 2rem auto;font-family:'Montserrat';height:100vh;}
+.step.step50 {height: 50vh;}
+.step:last-child {margin-bottom: 0;}
+.step-container{background-color: rgba(255,255,255,0.9);border:1px solid #000;padding:15px;}
+
+.desktopMap1, .desktopMap2, .desktopMap3, .desktopMap4{display: block;}
+.mobileMap1, .mobileMap2, .mobileMap3, .mobileMap4{display: none;}
+.legends{padding: 15pt;position: absolute;right: 0;bottom: 10px;list-style: none;}
+.legends li {margin: 10px auto;text-transform: uppercase;}
+.legends.map li {font-size: 10px;}
+.legends.map .legend{padding: 0 5px;}
+.legends.map li {display: inline;}
+.legend{padding: 1px 10px ;margin-right: 2px;border: 1px solid #000;}
+/* map indo */
+.highcharts-title{font-weight: bold;}
+.disabled {fill: #fff;}
+.enabled {fill:#cc0000}
+.indonesia-regencies{margin-top: -100px;}
+.geo.region{cursor: pointer;stroke: #000;stroke-width: 0.2;}
+.geo.region:hover{stroke-width: 1;}
+.tooltip{position: absolute;padding: 8pt;z-index: 10;width: fit-content;margin: auto;border:1px solid #000;font-family: 'Montserrat',sans-serif;top: 100px;visibility:hidden;background-color: #fff;}
+.flourish-credit{display: none;}
+.mapSVG{font-weight: bold;}
+.mapSVG i {font-weight: 400;font-style: normal;font-size: 12px;}
+/* language */
+.language {position: absolute;z-index: 2000;cursor: pointer;right: 5px;top:5px;}
+.language a {display: flex;align-items: center;padding: 5pt;background-color: #fff;}
+a#id-country-dropdown, a#en-country-dropdown{border: 1px solid black;}
+.language img {width: 20px;}
+.country{display: none;}
+.country.active{display: block;}
+.id-content, .en-content {display: none;}
+.dropdown {background-color: #fff;padding: 5pt;display: none;border: 1px solid black;}
+.image_bg {background: url('../images/cover-data-corona.jpg') no-repeat;height: 100vh;width:100vw;display: flex;justify-content: center;align-items: center;background-size: cover;background-attachment: fixed;background-position: center}
+@media (min-width: 740px){
+  .g-gallery {--padding: 20px;--n-columns: 7;}
+  .g-gallery .g-gallery-wrapper {-ms-flex-pack: justify;justify-content: space-between;}
+  .g-gallery .col-7 {box-sizing: border-box;width: calc((100%/var(--n-columns))*7);}
+}
+/* mobile css */
+@media only screen and (max-width:1024px){
+	.pier h1 {font-size: 36px;line-height: 40px;margin: 15px 0;}
+	.indonesia-regencies{margin-top: -50px;}
+	.desktopMap1, .desktopMap2, .desktopMap3, .desktopMap4{display: none;}
+	.mobileMap1, .mobileMap2, .mobileMap3, .mobileMap4{display: block;}
+}
+@media only screen and (max-width:550px){
+	.container-col{padding: 0 5%;}
+	.legends.map{bottom:-50px}
+	footer .footer-wrapper {padding: 0;}
+    footer .footer-wrapper .conde-links{display: grid;grid-template-columns: auto; grid-gap: 10px;padding: 0 25pt; justify-content: center; text-align: center;}
+	footer .conde-links .worldwide {width: 250px;margin: 0 auto;}
+	footer .component-corp-legal>div {margin-top: 10px;display: block;text-align: center;}
+	.social-media {position: unset;padding-bottom: 10pt;}
+}
+@media (min-width: 550px){
+	footer .footer-wrapper .conde-links {display: -webkit-box;display: -ms-flexbox;display: flex;}
+	footer .component-corp-legal {margin-top: 50px;border-top: 1px solid #666;font-size: 13px;line-height: 18px;}
+	footer .component-corp-legal>div {margin-top: 10px;}
+	footer .component-corp-legal>div .conde-logo {margin: 0 40px 0 0;width: auto;}
+}
+@media screen and (max-width:800px){
+.image_bg {background: url('../images/mobile.png') no-repeat;height: 100vh;width:100vw;display: flex;justify-content: center;align-items: center;background-size: cover;background-attachment: fixed;background-position: center}
+.pier h2 {
+	font-size: 1em;line-height: 30px;
+}
+.tooltip{position: fixed;top: unset !important;left: 0 !important;bottom: 0 ;right: 0 ;width: 100%;}
+.boxbox{margin:30px 10px;}
+.containerfull .container50left{width:100%; float:none;}
+.containerfull .container50right{width:100%; float:none; position:inherit;}
+.containerfull .container50right .inside{padding:30px; margin:30px 10px;}
+.legends li {display: inline;font-size: 10px;}
+.legend{padding: 0px 5px;}
+}
